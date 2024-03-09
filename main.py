@@ -102,7 +102,7 @@ print(sftp)
 
 for bic in banks:
     try:
-        download_files_for_month(sftp, year, month, remote_dir, local_dir,bic, "RejectedCreditTransfer")
+        download_files_for_month(sftp, year, month, remote_dir, local_dir,bic, "CreditTransferRecapitulation")
     except ValueError as error:
         print(error)
 
