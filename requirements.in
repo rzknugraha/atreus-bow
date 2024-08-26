@@ -1,0 +1,6 @@
+paramiko
+dotenv
+pyodbc
+cx_oracle
+impyla
+selenium

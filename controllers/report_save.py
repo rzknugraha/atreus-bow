@@ -46,7 +46,7 @@ def download_files_for_month(sftp, year, month, remote_dir, local_dir, bic ,type
                     sftp.get(remote_file, local_file)
                     print(f"Downloaded {remote_file} to {local_file}")
         except FileNotFoundError:
-            print(f"No files found for date: {remote_path}")
+            print(f"No files found in remote for date: {remote_path}")
         except Exception as e:
             print(f"An error occurred: {e}")
 

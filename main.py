@@ -2,6 +2,7 @@ import sys
 import importlib
 
 def run_controller(controller_name):
+    print(controller_name)
     try:
         # Dynamically import the specified controller module
         module = importlib.import_module(f"controllers.{controller_name}")
@@ -11,7 +12,7 @@ def run_controller(controller_name):
             raise AttributeError(f"'{controller_name}' module does not contain an 'execute' function.")
 
         # Call the `execute` function of the imported module
-        module.execute()
+        # module.execute()
     
     except ModuleNotFoundError:
         # Handle the case where the specified controller module isn't found
